@@ -11,7 +11,7 @@
        <!-- All Fonts -->
        <link rel="preconnect" href="https://fonts.googleapis.com">
        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
               rel="stylesheet">
        <!-- CSS styles -->
        <style>
@@ -20,16 +20,22 @@
                      font-family: "Raleway", sans-serif;
               }
 
-              /* style for font raleway */
+              /* style for font Inter */
               .font-inter {
                      font-family: "Inter", sans-serif;
+
+              }
+
+              /* style for font Roboto */
+              .font-roboto {
+                     font-family: "Roboto", sans-serif;
 
               }
        </style>
 </head>
 
 <body>
-       <section>
+       <section id="home-page" class="">
               <header class="mx-[135px] mt-[3.375rem] font-raleway">
                      <!-- Navigation section here -->
                      <div class="navbar bg-base-100 ">
@@ -139,8 +145,8 @@
                                           class="font-raleway text-[#1DD100] text-xl font-bold px-[30px] py-[21px] rounded-xl border-[1px] border-[#1DD100]">See
                                           All Offers</a></div>
                      </section>
-                     <section
-                            class="flex flex-col  items-center rounded-t-[88px] border-[#1DD100] border-t-2 bg-[#F7F8F8]">
+                     <section id="scroll-section"
+                            class="flex flex-col  items-center rounded-t-[88px] border-[#1DD100] border-t-2 bg-[#F7F8F8] pb-[120px]">
                             <div class="text-center mt-32 mb-12">
                                    <h3 class="font-raleway text-[40px] font-bold mb-6 text-[#030712]">P.H Paribahan</h3>
                                    <h5 class="font-inter text-[18px] font-normal text-[#03071299]">Yes, you can run unit
@@ -148,7 +154,7 @@
                                           testing features allow for a
                                           streamlined .</h5>
                             </div>
-                            <div id="scroll-section">
+                            <div>
                                    <div
                                           class="bg-[#FFF] h-[418px] w-[1170px] rounded-3xl flex flex-row items-center justify-center">
                                           <div>
@@ -170,7 +176,8 @@
                                                                <div>
                                                                       <h3
                                                                              class="text-[#1DD100] font-inter text-lg font-medium">
-                                                                             40 Seats left</h3>
+                                                                             <span id="seat-left">40</span> Seats left
+                                                                      </h3>
                                                                </div>
 
 
@@ -220,8 +227,8 @@
                                           </div>
                                           <div><img src="images/info-devider.png" alt=""></div>
                                           <div class="font-raleway flex flex-col items-center justify-center">
-                                                 <img src="images/fare.png" alt="">
-                                                 <h3 class="text-[32px] font-bold">550 Taka</h3>
+                                                 <img src="images/fare.png" alt="Ticket fare">
+                                                 <h3 class="text-[32px] font-bold mt-6 mb-4">550 Taka</h3>
                                                  <h3 class="text-xl font-medium">Per Seat</h3>
                                           </div>
                                    </div>
@@ -267,19 +274,19 @@
                                                                       <h4 class="uppercase ">a</h4>
                                                                </div>
                                                                <div
-                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
+                                                                      class="seat-in bus rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
                                                                       <h4 class="uppercase ">a1</h4>
                                                                </div>
                                                                <div
-                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center mr-8">
+                                                                      class="seat-in bus rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center mr-8">
                                                                       <h4 class="uppercase ">a2</h4>
                                                                </div>
                                                                <div
-                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
+                                                                      class="seat-in bus rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
                                                                       <h4 class="uppercase ">a3</h4>
                                                                </div>
                                                                <div
-                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
+                                                                      class="seat-in bus rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
                                                                       <h4 class="uppercase ">a4</h4>
                                                                </div>
                                                         </div>
@@ -289,19 +296,19 @@
                                                                       <h4 class="uppercase ">b</h4>
                                                                </div>
                                                                <div
-                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
+                                                                      class="seat-in bus rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
                                                                       <h4 class="uppercase ">b1</h4>
                                                                </div>
                                                                <div
-                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center mr-8">
+                                                                      class="seat-in bus rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center mr-8">
                                                                       <h4 class="uppercase ">b2</h4>
                                                                </div>
                                                                <div
-                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
+                                                                      class="seat-in bus rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
                                                                       <h4 class="uppercase ">b3</h4>
                                                                </div>
                                                                <div
-                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
+                                                                      class="seat-in bus rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
                                                                       <h4 class="uppercase ">b4</h4>
                                                                </div>
                                                         </div>
@@ -311,19 +318,19 @@
                                                                       <h4 class="uppercase ">c</h4>
                                                                </div>
                                                                <div
-                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
+                                                                      class="seat-in bus rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
                                                                       <h4 class="uppercase ">c1</h4>
                                                                </div>
                                                                <div
-                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center mr-8">
+                                                                      class="seat-in bus rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center mr-8">
                                                                       <h4 class="uppercase ">c2</h4>
                                                                </div>
                                                                <div
-                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
+                                                                      class="seat-in bus rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
                                                                       <h4 class="uppercase ">c3</h4>
                                                                </div>
                                                                <div
-                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
+                                                                      class="seat-in bus rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
                                                                       <h4 class="uppercase ">c4</h4>
                                                                </div>
                                                         </div>
@@ -333,19 +340,19 @@
                                                                       <h4 class="uppercase ">d</h4>
                                                                </div>
                                                                <div
-                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
+                                                                      class="seat-in bus rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
                                                                       <h4 class="uppercase ">d1</h4>
                                                                </div>
                                                                <div
-                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center mr-8">
+                                                                      class="seat-in bus rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center mr-8">
                                                                       <h4 class="uppercase ">d2</h4>
                                                                </div>
                                                                <div
-                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
+                                                                      class="seat-in bus rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
                                                                       <h4 class="uppercase ">d3</h4>
                                                                </div>
                                                                <div
-                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
+                                                                      class="seat-in bus rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
                                                                       <h4 class="uppercase ">d4</h4>
                                                                </div>
                                                         </div>
@@ -355,19 +362,19 @@
                                                                       <h4 class="uppercase ">e</h4>
                                                                </div>
                                                                <div
-                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
+                                                                      class="seat-in bus rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
                                                                       <h4 class="uppercase ">e1</h4>
                                                                </div>
                                                                <div
-                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center mr-8">
+                                                                      class="seat-in bus rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center mr-8">
                                                                       <h4 class="uppercase ">e2</h4>
                                                                </div>
                                                                <div
-                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
+                                                                      class="seat-in bus rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
                                                                       <h4 class="uppercase ">e3</h4>
                                                                </div>
                                                                <div
-                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
+                                                                      class="seat-in bus rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
                                                                       <h4 class="uppercase ">e4</h4>
                                                                </div>
                                                         </div>
@@ -377,19 +384,19 @@
                                                                       <h4 class="uppercase ">f</h4>
                                                                </div>
                                                                <div
-                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
+                                                                      class="seat-in bus rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
                                                                       <h4 class="uppercase ">f1</h4>
                                                                </div>
                                                                <div
-                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center mr-8">
+                                                                      class="seat-in bus rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center mr-8">
                                                                       <h4 class="uppercase ">f2</h4>
                                                                </div>
                                                                <div
-                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
+                                                                      class="seat-in bus rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
                                                                       <h4 class="uppercase ">f3</h4>
                                                                </div>
                                                                <div
-                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
+                                                                      class="seat-in bus rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
                                                                       <h4 class="uppercase ">f4</h4>
                                                                </div>
                                                         </div>
@@ -399,19 +406,19 @@
                                                                       <h4 class="uppercase ">g</h4>
                                                                </div>
                                                                <div
-                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
+                                                                      class="seat-in bus rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
                                                                       <h4 class="uppercase ">g1</h4>
                                                                </div>
                                                                <div
-                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center mr-8">
+                                                                      class="seat-in bus rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center mr-8">
                                                                       <h4 class="uppercase ">g2</h4>
                                                                </div>
                                                                <div
-                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
+                                                                      class="seat-in bus rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
                                                                       <h4 class="uppercase ">g3</h4>
                                                                </div>
                                                                <div
-                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
+                                                                      class="seat-in bus rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
                                                                       <h4 class="uppercase ">g4</h4>
                                                                </div>
                                                         </div>
@@ -421,19 +428,19 @@
                                                                       <h4 class="uppercase ">h</h4>
                                                                </div>
                                                                <div
-                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
+                                                                      class="seat-in bus rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
                                                                       <h4 class="uppercase ">h1</h4>
                                                                </div>
                                                                <div
-                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center mr-8">
+                                                                      class="seat-in bus rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center mr-8">
                                                                       <h4 class="uppercase ">h2</h4>
                                                                </div>
                                                                <div
-                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
+                                                                      class="seat-in bus rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
                                                                       <h4 class="uppercase ">h3</h4>
                                                                </div>
                                                                <div
-                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
+                                                                      class="seat-in bus rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
                                                                       <h4 class="uppercase ">h4</h4>
                                                                </div>
                                                         </div>
@@ -443,19 +450,19 @@
                                                                       <h4 class="uppercase ">i</h4>
                                                                </div>
                                                                <div
-                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
+                                                                      class="seat-in bus rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
                                                                       <h4 class="uppercase ">i1</h4>
                                                                </div>
                                                                <div
-                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center mr-8">
+                                                                      class="seat-in bus rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center mr-8">
                                                                       <h4 class="uppercase ">i2</h4>
                                                                </div>
                                                                <div
-                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
+                                                                      class="seat-in bus rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
                                                                       <h4 class="uppercase ">i3</h4>
                                                                </div>
                                                                <div
-                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
+                                                                      class="seat-in bus rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
                                                                       <h4 class="uppercase ">i4</h4>
                                                                </div>
                                                         </div>
@@ -465,19 +472,19 @@
                                                                       <h4 class="uppercase ">j</h4>
                                                                </div>
                                                                <div
-                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
+                                                                      class="seat-in bus rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
                                                                       <h4 class="uppercase ">j1</h4>
                                                                </div>
                                                                <div
-                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center mr-8">
+                                                                      class="seat-in bus rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center mr-8">
                                                                       <h4 class="uppercase ">j2</h4>
                                                                </div>
                                                                <div
-                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
+                                                                      class="seat-in bus rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
                                                                       <h4 class="uppercase ">j3</h4>
                                                                </div>
                                                                <div
-                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
+                                                                      class="seat-in bus rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
                                                                       <h4 class="uppercase ">j4</h4>
                                                                </div>
                                                         </div>
@@ -492,57 +499,68 @@
                                                  Select
                                                  Your Seat</h3>
                                           <hr>
-                                          <div class="mt-6 bg-[#F7F8F8] rounded-xl h-[335px] w-[433px] p-8">
+                                          <div class="mt-6 bg-[#F7F8F8] rounded-xl h-[380px] w-[433px] p-8">
                                                  <div class="flex justify-between mb-4">
                                                         <div>
                                                                <h3
-                                                                      class="text-[base/black] font-inter text-base font-medium">
-                                                                      Seat <span id="total-seat"
+                                                                      class="text-[#030712] font-inter text-base font-medium">
+                                                                      Seat <span id="total-seats"
                                                                              class="bg-[#1DD100] text-white text-xs font-bold p-1 rounded-lg">0</span>
                                                                </h3>
                                                         </div>
                                                         <div>
                                                                <h3
-                                                                      class="text-[base/black] font-inter text-base font-medium">
+                                                                      class="text-[#030712] font-inter text-base font-medium">
                                                                       Class</h3>
                                                         </div>
                                                         <div>
                                                                <h3
-                                                                      class="text-[base/black] font-inter text-base font-medium">
+                                                                      class="text-[#030712] font-inter text-base font-medium">
                                                                       Price</h3>
                                                         </div>
                                                  </div>
                                                  <hr>
-                                                 <div id="total-seat-details" class="min-h-12"></div>
+                                                 <div id="total-seat-details"
+                                                        class="min-h-24 flex justify-between my-4">
+                                                        <div id="selected-seat-name">
+
+                                                        </div>
+                                                        <div id="selected-seat-class">
+
+                                                        </div>
+                                                        <div id="selected-seat-price">
+
+                                                        </div>
+                                                 </div>
                                                  <hr>
                                                  <div class="flex justify-between my-4">
                                                         <div>
                                                                <h3
-                                                                      class="text-[base/black] font-inter text-base font-medium">
+                                                                      class="text-[#030712] font-inter text-base font-medium">
                                                                       Total Price</h3>
                                                         </div>
                                                         <div>
                                                                <h3
-                                                                      class="text-[base/black] font-inter text-base font-medium">
+                                                                      class="text-[#030712] font-inter text-base font-medium">
                                                                       BDT <span id="total-price">0</span></h3>
                                                         </div>
                                                  </div>
                                                  <div class="flex flex-col items-end">
-                                                        <input id="coupon-box" placeholder="Have any coupon?"
+                                                        <input disabled id="coupon-box" placeholder="Have any coupon?"
                                                                type="text"
                                                                class="h-14 w-[369px] bg-white rounded-xl font-inter pl-3">
-                                                        <button
+                                                        <button disabled id="coupon-box-btn" onclick="grandTotal()"
                                                                class="bg-[#1DD100] font-inter text-base font-semibold text-white rounded-lg px-[17px] py-[11px] -mt-[52px] mr-2">Apply</button>
                                                  </div>
                                                  <div class="flex justify-between mt-6">
                                                         <div>
                                                                <h3
-                                                                      class="text-[base/black] font-inter text-base font-medium">
+                                                                      class="text-[#030712] font-inter text-base font-medium">
                                                                       Grand Total</h3>
                                                         </div>
                                                         <div>
                                                                <h3
-                                                                      class="text-[base/black] font-inter text-base font-medium">
+                                                                      class="text-[#030712] font-inter text-base font-medium">
                                                                       BDT <span id="grand-total-price">0</span></h3>
                                                         </div>
                                                  </div>
@@ -552,21 +570,21 @@
                                                  <h4
                                                         class="text-[#030712] font-inter text-base font-semibold mt-6 mb-4">
                                                         Passenger Name*</h4>
-                                                 <input id="coupon-box" placeholder="Enter your name" type="text"
+                                                 <input placeholder="Enter your name" type="text"
                                                         class="h-16 w-[433px] rounded-xl border-[1px] border-[#0307121A] font-inter pl-3">
                                                  <h4
                                                         class="text-[#030712] font-inter text-base font-semibold mt-6 mb-4">
                                                         Phone Number*</h4>
-                                                 <input id="coupon-box" placeholder="Enter your phone number"
-                                                        type="text"
+                                                 <input placeholder="Enter your phone number" type="text"
                                                         class="h-16 w-[433px] rounded-xl border-[1px] border-[#0307121A] font-inter pl-3">
                                                  <h4
                                                         class="text-[#030712] font-inter text-base font-semibold mt-6 mb-4">
                                                         Email ID</h4>
-                                                 <input id="coupon-box" placeholder="Enter your email id" type="text"
+                                                 <input placeholder="Enter your email id" type="text"
                                                         class="h-16 w-[433px] rounded-xl border-[1px] border-[#0307121A] font-inter pl-3">
-                                                 <button
-                                                        class="font-raleway text-xl font-extrabold bg-[#1DD100] rounded-2xl px-[30px] py-[21px] w-[433px] mt-6 text-white">Next</button>
+                                                 <button onclick="confirm()"
+                                                        class="font-raleway text-xl font-extrabold bg-[#1DD100] rounded-2xl px-[30px] py-[21px] w-[433px] mt-6 text-white"
+                                                        disabled>Next</button>
                                                  <div class="flex justify-around mt-6">
                                                         <h4
                                                                class="font-inter text-base font-normal text-[#03071299] underline">
@@ -597,17 +615,39 @@
                      <hr>
                      <div class="mt-8 flex justify-between">
                             <div>
-                                   <h5 class="text-[#FFFFFFB2] font-inter text-base font-normal">@all rights reserved, P-Ticket services limited.2024</h5>
+                                   <h5 class="text-[#FFFFFFB2] font-inter text-base font-normal">@all rights reserved,
+                                          P-Ticket services limited.2024</h5>
                             </div>
                             <div class="flex gap-8">
-                                   <div><h5 class="text-white font-inter text-base font-medium">Terms & condition</h5></div>
-                                   <div><h5 class="text-white font-inter text-base font-medium">Return & refund policy</h5></div>
-                                   <div><h5 class="text-white font-inter text-base font-medium">Privacy policy</h5></div>
-                                   
+                                   <div>
+                                          <h5 class="text-white font-inter text-base font-medium">Terms & condition</h5>
+                                   </div>
+                                   <div>
+                                          <h5 class="text-white font-inter text-base font-medium">Return & refund policy
+                                          </h5>
+                                   </div>
+                                   <div>
+                                          <h5 class="text-white font-inter text-base font-medium">Privacy policy</h5>
+                                   </div>
                             </div>
                      </div>
               </footer>
        </section>
+       <section id="confirmation-page" class="bg-white hidden">
+              <div class="flex flex-col items-center text-center my-[120px] mx-[360px] bg-[#F2F1F1] py-14 px-20">
+                     <img src="images/success.png" alt="">
+                     <h3 class="text-[#27AE60] font-roboto text-2xl font-bold my-10">Success</h3>
+                     <h5 class="text-[#4A4A4A] font-roboto text-xl font-medium">Thank you for Booking Our Bus Seats.
+                            <br>We are working hard to find the best service and deals for you
+                     </h5>
+                     <h5 class="text-[#4A4A4A] font-roboto text-xl font-light my-5">Shortly you will find a confirmation
+                            in your email.</h5>
+                     <button onclick="home()"
+                            class="text-white font-roboto text-xl font-semibold bg-[#27AE60] rounded-[32px] h-14 w-[300px]">Continue</button>
+
+              </div>
+       </section>
+       <script src="JS/utility.js"></script>
        <script src="JS/script.js"></script>
 </body>
 
