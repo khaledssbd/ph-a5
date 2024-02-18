@@ -65,9 +65,9 @@
                                    tests and view the results directly within the app. The <br> integrated testing
                                    features allow for a
                                    streamlined .</h5>
-                            <a
-                                   class="text-[#030712] text-xl font-bold w-[125px] px-[30px] py-[21px] rounded-xl bg-[#1DD100] ">Buy
-                                   Tickets</a>
+                            <button onclick="scrollToSection('scroll-section')"
+                                   class="btn text-[#030712] text-xl font-bold  px-[30px] rounded-xl bg-[#1DD100]">Buy
+                                   Tickets</button>
                             <div class="flex justify-center gap-6 mt-[66px]">
                                    <div
                                           class="flex items-center justify-center gap-4 h-[138px] w-[308px] bg-white rounded-3xl border-b-[3px] border-[#1DD100]">
@@ -139,7 +139,8 @@
                                           class="font-raleway text-[#1DD100] text-xl font-bold px-[30px] py-[21px] rounded-xl border-[1px] border-[#1DD100]">See
                                           All Offers</a></div>
                      </section>
-                     <section class="flex flex-col  items-center rounded-[88px] border-[#1DD100] border-t-2 bg-[#F7F8F8]">
+                     <section
+                            class="flex flex-col  items-center rounded-t-[88px] border-[#1DD100] border-t-2 bg-[#F7F8F8]">
                             <div class="text-center mt-32 mb-12">
                                    <h3 class="font-raleway text-[40px] font-bold mb-6 text-[#030712]">P.H Paribahan</h3>
                                    <h5 class="font-inter text-[18px] font-normal text-[#03071299]">Yes, you can run unit
@@ -147,7 +148,7 @@
                                           testing features allow for a
                                           streamlined .</h5>
                             </div>
-                            <div>
+                            <div id="scroll-section">
                                    <div
                                           class="bg-[#FFF] h-[418px] w-[1170px] rounded-3xl flex flex-row items-center justify-center">
                                           <div>
@@ -176,7 +177,7 @@
                                                         </div>
                                                  </div>
                                                  <div
-                                                        class="rounded-3xl bg-[#F7F8F8] h-[258px] w-[808px] flex flex-col gap-6 p-6">
+                                                        class="rounded-3xl bg-[#F7F8F8] h-[258px] w-[808px] flex flex-col gap-6 p-6 mt-6">
                                                         <div class="flex justify-between">
                                                                <h3
                                                                       class="font-raleway text-[18px] font-semibold text-[#03071299]">
@@ -225,8 +226,314 @@
                                           </div>
                                    </div>
                             </div>
-                            <div>
-                                   
+                            <!-- ticket sell -->
+                            <div class="rounded-3xl h-[1056px] w-[1170px] bg-white mt-6 p-8 flex">
+                                   <div>
+                                          <div>
+                                                 <h3 class="font-raleway text-2xl font-semibold text-[#030712] mb-6">
+                                                        Select
+                                                        Your Seat</h3>
+                                          </div>
+                                          <hr>
+                                          <div class="flex justify-between my-4">
+                                                 <div class="flex gap-2">
+                                                        <img src="images/seat-gray.png" alt="">
+                                                        <h3 class="font-inter text-lg font-medium text-[#03071280]">
+                                                               Available</h3>
+                                                 </div>
+                                                 <div class="flex gap-2">
+                                                        <img src="images/seat-green.png" alt="">
+                                                        <h3 class="font-inter text-lg font-medium text-[#1DD100]">
+                                                               Selected</h3>
+                                                 </div>
+                                          </div>
+                                          <hr>
+                                          <div class="my-6">
+                                                 <div class="flex justify-end">
+                                                        <div class="py-3 px-10 mb-6 bg-[#0307121A] rounded-xl"><svg
+                                                                      xmlns="http://www.w3.org/2000/svg" width="32"
+                                                                      height="32" viewBox="0 0 32 32" fill="none">
+                                                                      <path d="M16 28C14.4241 28 12.8637 27.6896 11.4078 27.0866C9.95189 26.4835 8.62902 25.5996 7.51472 24.4853C6.40042 23.371 5.5165 22.0481 4.91345 20.5922C4.31039 19.1363 4 17.5759 4 16C4 14.4241 4.31039 12.8637 4.91345 11.4078C5.5165 9.95189 6.40042 8.62902 7.51472 7.51472C8.62902 6.40042 9.95189 5.5165 11.4078 4.91345C12.8637 4.31039 14.4241 4 16 4C17.5759 4 19.1363 4.31039 20.5922 4.91345C22.0481 5.5165 23.371 6.40042 24.4853 7.51472C25.5996 8.62902 26.4835 9.95189 27.0866 11.4078C27.6896 12.8637 28 14.4241 28 16C28 17.5759 27.6896 19.1363 27.0866 20.5922C26.4835 22.0481 25.5996 23.371 24.4853 24.4853C23.371 25.5996 22.0481 26.4835 20.5922 27.0866C19.1363 27.6896 17.5759 28 16 28ZM16 28V18.6667M13.3333 16C13.3333 16.7072 13.6143 17.3855 14.1144 17.8856C14.6145 18.3857 15.2928 18.6667 16 18.6667M13.3333 16C13.3333 15.2928 13.6143 14.6145 14.1144 14.1144C14.6145 13.6143 15.2928 13.3333 16 13.3333C16.7072 13.3333 17.3855 13.6143 17.8856 14.1144C18.3857 14.6145 18.6667 15.2928 18.6667 16M13.3333 16L4.33333 13.3333M16 18.6667C16.7072 18.6667 17.3855 18.3857 17.8856 17.8856C18.3857 17.3855 18.6667 16.7072 18.6667 16M18.6667 16L27.6667 13.3333"
+                                                                             stroke="#030712" stroke-opacity="0.7"
+                                                                             stroke-width="2" stroke-linecap="round"
+                                                                             stroke-linejoin="round" />
+                                                               </svg>
+                                                        </div>
+                                                 </div>
+                                                 <div>
+                                                        <div
+                                                               class="flex gap-8 font-inter text-lg font-medium text-[#03071280] mb-6">
+                                                               <div class="h-14 flex justify-center items-center">
+                                                                      <h4 class="uppercase ">a</h4>
+                                                               </div>
+                                                               <div
+                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
+                                                                      <h4 class="uppercase ">a1</h4>
+                                                               </div>
+                                                               <div
+                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center mr-8">
+                                                                      <h4 class="uppercase ">a2</h4>
+                                                               </div>
+                                                               <div
+                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
+                                                                      <h4 class="uppercase ">a3</h4>
+                                                               </div>
+                                                               <div
+                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
+                                                                      <h4 class="uppercase ">a4</h4>
+                                                               </div>
+                                                        </div>
+                                                        <div
+                                                               class="flex gap-8 font-inter text-lg font-medium text-[#03071280] mb-6">
+                                                               <div class="h-14 flex justify-center items-center">
+                                                                      <h4 class="uppercase ">b</h4>
+                                                               </div>
+                                                               <div
+                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
+                                                                      <h4 class="uppercase ">b1</h4>
+                                                               </div>
+                                                               <div
+                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center mr-8">
+                                                                      <h4 class="uppercase ">b2</h4>
+                                                               </div>
+                                                               <div
+                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
+                                                                      <h4 class="uppercase ">b3</h4>
+                                                               </div>
+                                                               <div
+                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
+                                                                      <h4 class="uppercase ">b4</h4>
+                                                               </div>
+                                                        </div>
+                                                        <div
+                                                               class="flex gap-8 font-inter text-lg font-medium text-[#03071280] mb-6">
+                                                               <div class="h-14 flex justify-center items-center">
+                                                                      <h4 class="uppercase ">c</h4>
+                                                               </div>
+                                                               <div
+                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
+                                                                      <h4 class="uppercase ">c1</h4>
+                                                               </div>
+                                                               <div
+                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center mr-8">
+                                                                      <h4 class="uppercase ">c2</h4>
+                                                               </div>
+                                                               <div
+                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
+                                                                      <h4 class="uppercase ">c3</h4>
+                                                               </div>
+                                                               <div
+                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
+                                                                      <h4 class="uppercase ">c4</h4>
+                                                               </div>
+                                                        </div>
+                                                        <div
+                                                               class="flex gap-8 font-inter text-lg font-medium text-[#03071280] mb-6">
+                                                               <div class="h-14 flex justify-center items-center">
+                                                                      <h4 class="uppercase ">d</h4>
+                                                               </div>
+                                                               <div
+                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
+                                                                      <h4 class="uppercase ">d1</h4>
+                                                               </div>
+                                                               <div
+                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center mr-8">
+                                                                      <h4 class="uppercase ">d2</h4>
+                                                               </div>
+                                                               <div
+                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
+                                                                      <h4 class="uppercase ">d3</h4>
+                                                               </div>
+                                                               <div
+                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
+                                                                      <h4 class="uppercase ">d4</h4>
+                                                               </div>
+                                                        </div>
+                                                        <div
+                                                               class="flex gap-8 font-inter text-lg font-medium text-[#03071280] mb-6">
+                                                               <div class="h-14 flex justify-center items-center">
+                                                                      <h4 class="uppercase ">e</h4>
+                                                               </div>
+                                                               <div
+                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
+                                                                      <h4 class="uppercase ">e1</h4>
+                                                               </div>
+                                                               <div
+                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center mr-8">
+                                                                      <h4 class="uppercase ">e2</h4>
+                                                               </div>
+                                                               <div
+                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
+                                                                      <h4 class="uppercase ">e3</h4>
+                                                               </div>
+                                                               <div
+                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
+                                                                      <h4 class="uppercase ">e4</h4>
+                                                               </div>
+                                                        </div>
+                                                        <div
+                                                               class="flex gap-8 font-inter text-lg font-medium text-[#03071280] mb-6">
+                                                               <div class="h-14 flex justify-center items-center">
+                                                                      <h4 class="uppercase ">f</h4>
+                                                               </div>
+                                                               <div
+                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
+                                                                      <h4 class="uppercase ">f1</h4>
+                                                               </div>
+                                                               <div
+                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center mr-8">
+                                                                      <h4 class="uppercase ">f2</h4>
+                                                               </div>
+                                                               <div
+                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
+                                                                      <h4 class="uppercase ">f3</h4>
+                                                               </div>
+                                                               <div
+                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
+                                                                      <h4 class="uppercase ">f4</h4>
+                                                               </div>
+                                                        </div>
+                                                        <div
+                                                               class="flex gap-8 font-inter text-lg font-medium text-[#03071280] mb-6">
+                                                               <div class="h-14 flex justify-center items-center">
+                                                                      <h4 class="uppercase ">g</h4>
+                                                               </div>
+                                                               <div
+                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
+                                                                      <h4 class="uppercase ">g1</h4>
+                                                               </div>
+                                                               <div
+                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center mr-8">
+                                                                      <h4 class="uppercase ">g2</h4>
+                                                               </div>
+                                                               <div
+                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
+                                                                      <h4 class="uppercase ">g3</h4>
+                                                               </div>
+                                                               <div
+                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
+                                                                      <h4 class="uppercase ">g4</h4>
+                                                               </div>
+                                                        </div>
+                                                        <div
+                                                               class="flex gap-8 font-inter text-lg font-medium text-[#03071280] mb-6">
+                                                               <div class="h-14 flex justify-center items-center">
+                                                                      <h4 class="uppercase ">h</h4>
+                                                               </div>
+                                                               <div
+                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
+                                                                      <h4 class="uppercase ">h1</h4>
+                                                               </div>
+                                                               <div
+                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center mr-8">
+                                                                      <h4 class="uppercase ">h2</h4>
+                                                               </div>
+                                                               <div
+                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
+                                                                      <h4 class="uppercase ">h3</h4>
+                                                               </div>
+                                                               <div
+                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
+                                                                      <h4 class="uppercase ">h4</h4>
+                                                               </div>
+                                                        </div>
+                                                        <div
+                                                               class="flex gap-8 font-inter text-lg font-medium text-[#03071280] mb-6">
+                                                               <div class="h-14 flex justify-center items-center">
+                                                                      <h4 class="uppercase ">i</h4>
+                                                               </div>
+                                                               <div
+                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
+                                                                      <h4 class="uppercase ">i1</h4>
+                                                               </div>
+                                                               <div
+                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center mr-8">
+                                                                      <h4 class="uppercase ">i2</h4>
+                                                               </div>
+                                                               <div
+                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
+                                                                      <h4 class="uppercase ">i3</h4>
+                                                               </div>
+                                                               <div
+                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
+                                                                      <h4 class="uppercase ">i4</h4>
+                                                               </div>
+                                                        </div>
+                                                        <div
+                                                               class="flex gap-8 font-inter text-lg font-medium text-[#03071280] mb-6">
+                                                               <div class="h-14 flex justify-center items-center">
+                                                                      <h4 class="uppercase ">j</h4>
+                                                               </div>
+                                                               <div
+                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
+                                                                      <h4 class="uppercase ">j1</h4>
+                                                               </div>
+                                                               <div
+                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center mr-8">
+                                                                      <h4 class="uppercase ">j2</h4>
+                                                               </div>
+                                                               <div
+                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
+                                                                      <h4 class="uppercase ">j3</h4>
+                                                               </div>
+                                                               <div
+                                                                      class="rounded-xl bg-[#F7F8F8] h-14 w-[110px] flex justify-center items-center">
+                                                                      <h4 class="uppercase ">j4</h4>
+                                                               </div>
+                                                        </div>
+
+                                                 </div>
+                                          </div>
+
+                                   </div>
+                                   <div class="border-2 border-[#0307124D] border-dashed h-auto w-auto mx-8"></div>
+                                   <div>
+                                          <h3 class="font-raleway text-2xl font-semibold text-[#030712] mb-6">
+                                                 Select
+                                                 Your Seat</h3>
+                                          <hr>
+                                          <div class="mt-6 bg-[#F7F8F8] rounded-xl h-[335px] w-[433px] p-8">
+                                                 <div class="flex justify-between mb-4">
+                                                        <div>
+                                                               <h3
+                                                                      class="text-[base/black] font-inter text-base font-medium">
+                                                                      Seat <span id="total-seat"
+                                                                             class="bg-[#1DD100] text-white text-xs font-bold p-1 rounded-lg">0</span>
+                                                               </h3>
+                                                        </div>
+                                                        <div>
+                                                               <h3
+                                                                      class="text-[base/black] font-inter text-base font-medium">
+                                                                      Class</h3>
+                                                        </div>
+                                                        <div>
+                                                               <h3
+                                                                      class="text-[base/black] font-inter text-base font-medium">
+                                                                      Price</h3>
+                                                        </div>
+                                                 </div>
+                                                 <hr>
+                                                 <div id="total-seat-details" class="min-h-12"></div>
+                                                 <hr>
+                                                 <div class="flex justify-between my-4">
+                                                        <div>
+                                                               <h3
+                                                                      class="text-[base/black] font-inter text-base font-medium">
+                                                                      Total Price</h3>
+                                                        </div>
+                                                        <div>
+                                                               <h3
+                                                                      class="text-[base/black] font-inter text-base font-medium">
+                                                                      BDT <span id="total-price">0</span></h3>
+                                                        </div>
+                                                 </div>
+                                                 <input id="coupon-box" placeholder="Have any coupon?" type="text"
+                                                        class="h-14 w-[369px] bg-white rounded-xl font-inter pl-3">
+                                                 <button
+                                                        class="bg-[#1DD100] font-inter text-base font-semibold text-white rounded-lg px-[17px] py-[11px]">Apply</button>
+
+                                          </div>
+                                   </div>
                             </div>
                      </section>
               </main>
@@ -234,6 +541,7 @@
 
               </footer>
        </section>
+       <script src="JS/script.js"></script>
 </body>
 
 </html>
