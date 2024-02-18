@@ -66,7 +66,7 @@
                                    features allow for a
                                    streamlined .</h5>
                             <button onclick="scrollToSection('scroll-section')"
-                                   class="btn text-[#030712] text-xl font-bold  px-[30px] rounded-xl bg-[#1DD100]">Buy
+                                   class="text-[#030712] text-xl font-bold border-0 px-[30px] py-[21px] rounded-xl bg-[#1DD100]">Buy
                                    Tickets</button>
                             <div class="flex justify-center gap-6 mt-[66px]">
                                    <div
@@ -527,18 +527,85 @@
                                                                       BDT <span id="total-price">0</span></h3>
                                                         </div>
                                                  </div>
-                                                 <input id="coupon-box" placeholder="Have any coupon?" type="text"
-                                                        class="h-14 w-[369px] bg-white rounded-xl font-inter pl-3">
+                                                 <div class="flex flex-col items-end">
+                                                        <input id="coupon-box" placeholder="Have any coupon?"
+                                                               type="text"
+                                                               class="h-14 w-[369px] bg-white rounded-xl font-inter pl-3">
+                                                        <button
+                                                               class="bg-[#1DD100] font-inter text-base font-semibold text-white rounded-lg px-[17px] py-[11px] -mt-[52px] mr-2">Apply</button>
+                                                 </div>
+                                                 <div class="flex justify-between mt-6">
+                                                        <div>
+                                                               <h3
+                                                                      class="text-[base/black] font-inter text-base font-medium">
+                                                                      Grand Total</h3>
+                                                        </div>
+                                                        <div>
+                                                               <h3
+                                                                      class="text-[base/black] font-inter text-base font-medium">
+                                                                      BDT <span id="grand-total-price">0</span></h3>
+                                                        </div>
+                                                 </div>
+
+                                          </div>
+                                          <div>
+                                                 <h4
+                                                        class="text-[#030712] font-inter text-base font-semibold mt-6 mb-4">
+                                                        Passenger Name*</h4>
+                                                 <input id="coupon-box" placeholder="Enter your name" type="text"
+                                                        class="h-16 w-[433px] rounded-xl border-[1px] border-[#0307121A] font-inter pl-3">
+                                                 <h4
+                                                        class="text-[#030712] font-inter text-base font-semibold mt-6 mb-4">
+                                                        Phone Number*</h4>
+                                                 <input id="coupon-box" placeholder="Enter your phone number"
+                                                        type="text"
+                                                        class="h-16 w-[433px] rounded-xl border-[1px] border-[#0307121A] font-inter pl-3">
+                                                 <h4
+                                                        class="text-[#030712] font-inter text-base font-semibold mt-6 mb-4">
+                                                        Email ID</h4>
+                                                 <input id="coupon-box" placeholder="Enter your email id" type="text"
+                                                        class="h-16 w-[433px] rounded-xl border-[1px] border-[#0307121A] font-inter pl-3">
                                                  <button
-                                                        class="bg-[#1DD100] font-inter text-base font-semibold text-white rounded-lg px-[17px] py-[11px]">Apply</button>
+                                                        class="font-raleway text-xl font-extrabold bg-[#1DD100] rounded-2xl px-[30px] py-[21px] w-[433px] mt-6 text-white">Next</button>
+                                                 <div class="flex justify-around mt-6">
+                                                        <h4
+                                                               class="font-inter text-base font-normal text-[#03071299] underline">
+                                                               Terms and Conditions</h4>
+                                                        <h4
+                                                               class="font-inter text-base font-normal text-[#03071299] underline">
+                                                               Cancellation Policy</h4>
+                                                 </div>
 
                                           </div>
                                    </div>
                             </div>
                      </section>
               </main>
-              <footer>
+              <footer class="mt-30 bg-[#030712] py-[120px] px-[135px]">
+                     <div class="flex justify-between">
+                            <div class="mb-12">
+                                   <h3 class="text-white font-raleway text-4xl font-extrabold mb-4">P-Ticket</h3>
+                                   <p class="text-[#FFFFFFCC] font-inter text-lg font-normal">P-Ticket is a digital
+                                          platform to make your <br> daily commuting better.</p>
+                            </div>
+                            <div>
+                                   <h4 class="text-white font-raleway text-xl font-semibold mb-5">Download our app</h4>
+                                   <img src="images/play.png" alt="">
 
+                            </div>
+                     </div>
+                     <hr>
+                     <div class="mt-8 flex justify-between">
+                            <div>
+                                   <h5 class="text-[#FFFFFFB2] font-inter text-base font-normal">@all rights reserved, P-Ticket services limited.2024</h5>
+                            </div>
+                            <div class="flex gap-8">
+                                   <div><h5 class="text-white font-inter text-base font-medium">Terms & condition</h5></div>
+                                   <div><h5 class="text-white font-inter text-base font-medium">Return & refund policy</h5></div>
+                                   <div><h5 class="text-white font-inter text-base font-medium">Privacy policy</h5></div>
+                                   
+                            </div>
+                     </div>
               </footer>
        </section>
        <script src="JS/script.js"></script>
