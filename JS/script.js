@@ -69,13 +69,13 @@ function setGrandTotal() {
     grandTotalPrice = grandTotal(totalPrice, 0.15);
     setTextElementValueById('grand-total-price', grandTotalPrice);
     discounted = totalPrice - grandTotalPrice;
-    selectedSeatName(discounted + ' Taka Discounted', 'discounts');
+    selectedSeatName(discounted + ' Taka Discount..!', 'discounts');
     hideElementById('coupon-area');
   } else if (inputValue == 'Couple 20') {
     grandTotalPrice = grandTotal(totalPrice, 0.2);
     setTextElementValueById('grand-total-price', grandTotalPrice);
     discounted = totalPrice - grandTotalPrice;
-    selectedSeatName(discounted + 'Taka Discounted', 'discounts');
+    selectedSeatName(discounted + ' Taka Discount..!', 'discounts');
     hideElementById('coupon-area');
   }
 }
@@ -86,9 +86,7 @@ document
     let grandTotalPrice = getTextElementValueById('grand-total-price');
     let couponBoxBtn = document.getElementById('coupon-box-btn');
     inputValue = event.target.value;
-    if (inputValue == 'NEW15') {
-      couponBoxBtn.removeAttribute('disabled');
-    } else if (inputValue == 'Couple 20') {
+    if (inputValue == 'NEW15' || inputValue == 'Couple 20') {
       couponBoxBtn.removeAttribute('disabled');
     } else {
       couponBoxBtn.setAttribute('disabled', true);
@@ -117,52 +115,54 @@ let array = [];
 
 for (const seat of seats) {
   seat.addEventListener('click', function () {
-    setBgGreenByClass(seat);
     seatName = seat.innerText;
-    array.push(seatName);
-    seatsClicked = countUniqueSeats(array);
-    seatsLeft = 40 - seatsClicked;
+    if (!array.includes(seatName)) {
+      array.push(seatName);
+      seatsClicked = countUniqueSeats(array);
+      seatsLeft = 40 - seatsClicked;
 
-    if (seatsClicked <= 4) {
-      setTextElementValueById('total-seats', seatsClicked);
-      setTextElementValueById('seat-left', seatsLeft);
-      totalPrice = seatsClicked * 550;
-      setTextElementValueById('total-price', totalPrice);
-      setTextElementValueById('grand-total-price', totalPrice);
+      if (seatsClicked <= 4) {
+        setBgGreenByClass(seat);
+        setTextElementValueById('total-seats', seatsClicked);
+        setTextElementValueById('seat-left', seatsLeft);
+        totalPrice = seatsClicked * 550;
+        setTextElementValueById('total-price', totalPrice);
+        setTextElementValueById('grand-total-price', totalPrice);
 
-      document
-        .getElementById('passenger-phone')
-        .addEventListener('keyup', function (event) {
-          pPhone = event.target.value;
-          console.log(pPhone);
-          const nextBtn = document.getElementById('next-btn');
-          console.log(nextBtn);
-          if (pPhone && totalPrice > 550) {
-            nextBtn.removeAttribute('disabled');
-          } else {
-            nextBtn.setAttribute('disabled', true);
-          }
-        });
+        document
+          .getElementById('passenger-phone')
+          .addEventListener('keyup', function (event) {
+            pPhone = event.target.value;
+            console.log(pPhone);
+            const nextBtn = document.getElementById('next-btn');
+            console.log(nextBtn);
+            if (pPhone && totalPrice > 550) {
+              nextBtn.removeAttribute('disabled');
+            } else {
+              nextBtn.setAttribute('disabled', true);
+            }
+          });
 
-      seatDetails(
-        seatName,
-        'Economy',
-        550,
-        'selected-seat-name',
-        'selected-seat-class',
-        'selected-seat-price'
-      );
-      couponBox = document.getElementById('coupon-box');
-      if (seatsClicked === 4) {
-        couponBox.removeAttribute('disabled');
-        seat.setAttribute('disabled', 'true');
+        seatDetails(
+          seatName,
+          'Economy',
+          550,
+          'selected-seat-name',
+          'selected-seat-class',
+          'selected-seat-price'
+        );
+        couponBox = document.getElementById('coupon-box');
+        if (seatsClicked === 4) {
+          couponBox.removeAttribute('disabled');
+          seat.setAttribute('disabled', 'true');
+        }
+      } else if (seatsClicked > 4) {
+        alert('Earn More Money');
+        couponBox.setAttribute('disabled', true);
+        return;
       }
-    } else if (seatsClicked > 4) {
-      alert('Earn More Money');
-      couponBox.setAttribute('disabled', true);
-      return;
     }
   });
 }
 
-//*-------------------------------------------------
+
