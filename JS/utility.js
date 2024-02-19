@@ -66,9 +66,15 @@ function setGrandTotal() {
   if (inputValue == 'NEW15') {
     grandTotalPrice = grandTotal(totalPrice, 0.15);
     setTextElementValueById('grand-total-price', grandTotalPrice);
+    discounted = totalPrice - grandTotalPrice;
+    selectedSeatName(discounted + ' Taka Discounted', 'discounts');
+    hideElementById('coupon-area');
   } else if (inputValue == 'Couple 20') {
     grandTotalPrice = grandTotal(totalPrice, 0.2);
     setTextElementValueById('grand-total-price', grandTotalPrice);
+    discounted = totalPrice - grandTotalPrice;
+    selectedSeatName(discounted + 'Taka Discounted', 'discounts');
+    hideElementById('coupon-area');
   }
 }
 

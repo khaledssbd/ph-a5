@@ -35,7 +35,7 @@ for (const seat of seats) {
 
     seatDetails(
       seatName,
-      seatName[0],
+      'Economy',
       550,
       'selected-seat-name',
       'selected-seat-class',
@@ -44,7 +44,10 @@ for (const seat of seats) {
     couponBox = document.getElementById('coupon-box');
     if (seatsClicked === 4) {
       couponBox.removeAttribute('disabled');
-        seat.setAttribute('disabled', 'true');
+      seat.setAttribute('disabled', 'true');
+    } else if (seatsClicked > 4) {
+      alert('Earn More Money');
+      couponBox.setAttribute('disabled', true);
     } else {
       couponBox.setAttribute('disabled', true);
     }

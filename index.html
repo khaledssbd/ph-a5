@@ -545,12 +545,14 @@
                                                                       BDT <span id="total-price">0</span></h3>
                                                         </div>
                                                  </div>
-                                                 <div class="flex flex-col items-end">
-                                                        <input disabled id="coupon-box" placeholder="Have any coupon?"
-                                                               type="text"
-                                                               class="h-14 w-[369px] bg-white rounded-xl font-inter pl-3">
-                                                        <button disabled id="coupon-box-btn" onclick="setGrandTotal()"
-                                                               class="bg-[#1DD100] font-inter text-base font-semibold text-white rounded-lg px-[17px] py-[11px] -mt-[52px] mr-2">Apply</button>
+                                                 <div id="discounts"></div>
+                                                 <div id="coupon-area" class="">
+                                                        <div class="flex flex-col items-end">
+                                                               <input disabled id="coupon-box" placeholder="Have any coupon?" type="text"
+                                                                      class="h-14 w-[369px] bg-white rounded-xl font-inter pl-3">
+                                                               <button disabled id="coupon-box-btn" onclick="setGrandTotal()"
+                                                                      class="bg-[#1DD100] font-inter text-base font-semibold text-white rounded-lg px-[17px] py-[11px] -mt-[52px] mr-2">Apply</button>
+                                                        </div>
                                                  </div>
                                                  <div class="flex justify-between mt-6">
                                                         <div>
@@ -575,7 +577,7 @@
                                                  <h4 id="passenger-phone"
                                                         class="text-[#030712] font-inter text-base font-semibold mt-6 mb-4">
                                                         Phone Number*</h4>
-                                                 <input placeholder="Enter your phone number" type="text"
+                                                 <input placeholder="Enter your phone number" type="number"
                                                         class="h-16 w-[433px] rounded-xl border-[1px] border-[#0307121A] font-inter pl-3">
                                                  <h4
                                                         class="text-[#030712] font-inter text-base font-semibold mt-6 mb-4">
