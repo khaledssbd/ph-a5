@@ -92,6 +92,7 @@ document
       couponBoxBtn.setAttribute('disabled', true);
     }
   });
+
 //* ----------------> Scripting
 function scrollToSection(sectionId) {
   const section = document.getElementById(sectionId);
@@ -136,7 +137,7 @@ for (const seat of seats) {
             console.log(pPhone);
             const nextBtn = document.getElementById('next-btn');
             console.log(nextBtn);
-            if (pPhone && totalPrice > 550) {
+            if (pPhone && totalPrice >= 550) {
               nextBtn.removeAttribute('disabled');
             } else {
               nextBtn.setAttribute('disabled', true);
@@ -164,5 +165,3 @@ for (const seat of seats) {
     }
   });
 }
-
-
