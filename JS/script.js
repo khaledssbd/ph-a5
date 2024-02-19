@@ -64,12 +64,21 @@ function grandTotal(total, percent) {
   grandTotal = total - total * percent;
   return grandTotal;
 }
+
+    let grandTotalPrice = getTextElementValueById('grand-total-price');
+    let couponBoxBtn = document.getElementById('coupon-box-btn');
+document
+  .getElementById('coupon-box')
+  .addEventListener('keyup', function (event) {
+    inputValue = event.target.value;
+  });
+
 function setGrandTotal() {
   if (inputValue == 'NEW15') {
     grandTotalPrice = grandTotal(totalPrice, 0.15);
     setTextElementValueById('grand-total-price', grandTotalPrice);
     discounted = totalPrice - grandTotalPrice;
-    selectedSeatName(discounted + ' Taka Discount..!', 'discounts');
+    selectedSeatName('Discount Price BDT ' + discounted, 'discounts');
     hideElementById('coupon-area');
   } else if (inputValue == 'Couple 20') {
     grandTotalPrice = grandTotal(totalPrice, 0.2);
@@ -77,21 +86,11 @@ function setGrandTotal() {
     discounted = totalPrice - grandTotalPrice;
     selectedSeatName(discounted + ' Taka Discount..!', 'discounts');
     hideElementById('coupon-area');
+  } else if (inputValue !== 'NEW15' || inputValue !== 'Couple 20') {
+    alert('Invalid Coupon..!');
   }
 }
 
-document
-  .getElementById('coupon-box')
-  .addEventListener('keyup', function (event) {
-    let grandTotalPrice = getTextElementValueById('grand-total-price');
-    let couponBoxBtn = document.getElementById('coupon-box-btn');
-    inputValue = event.target.value;
-    if (inputValue == 'NEW15' || inputValue == 'Couple 20') {
-      couponBoxBtn.removeAttribute('disabled');
-    } else {
-      couponBoxBtn.setAttribute('disabled', true);
-    }
-  });
 
 //* ----------------> Scripting
 function scrollToSection(sectionId) {
@@ -134,7 +133,7 @@ for (const seat of seats) {
           .addEventListener('keyup', function (event) {
             pPhone = event.target.value;
             const nextBtn = document.getElementById('next-btn');
-            if (pPhone !== '' && totalPrice >= 550) {
+            if (pPhone !== '' && seatsClicked >= 1) {
               nextBtn.removeAttribute('disabled');
             } else {
               nextBtn.setAttribute('disabled', true);
