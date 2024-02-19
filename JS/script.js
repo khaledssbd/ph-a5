@@ -129,15 +129,12 @@ for (const seat of seats) {
         totalPrice = seatsClicked * 550;
         setTextElementValueById('total-price', totalPrice);
         setTextElementValueById('grand-total-price', totalPrice);
-
         document
           .getElementById('passenger-phone')
           .addEventListener('keyup', function (event) {
-            pPhone = event.target.value;
-            console.log(pPhone);
+            pPhone = event.target.value.trim();
             const nextBtn = document.getElementById('next-btn');
-            console.log(nextBtn);
-            if (pPhone && totalPrice >= 550) {
+            if (pPhone !== '' && totalPrice >= 550) {
               nextBtn.removeAttribute('disabled');
             } else {
               nextBtn.setAttribute('disabled', true);
