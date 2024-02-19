@@ -11,7 +11,7 @@ function setBgGreenByClass(element) {
   element.classList.remove('bg-[#F7F8F8]');
   element.classList.add('bg-[#1DD100]');
   element.classList.add('text-white');
-  element.setAttribute('disabled', 'true');
+  element.setAttribute('disabled', true);
 }
 
 function setBgGrayColorByClass(element) {
@@ -19,22 +19,6 @@ function setBgGrayColorByClass(element) {
   element.classList.remove('text-white');
   element.classList.add('bg-[#F7F8F8]');
 }
-
-document.getElementById('coupon-box').addEventListener('keyup', function () {
-  let grandTotalPrice = getTextElementValueById('grand-total-price');
-  let couponBoxBtn = document.getElementById('coupon-box-btn');
-
-  inputValue = event.target.value;
-  if (inputValue == 'NEW15') {
-    couponBoxBtn.removeAttribute('disabled');
-    grandTotalPrice = grandTotal(totalPrice, 0.15);
-    setTextElementValueById('grand-total-price', grandTotalPrice);
-  } else if (inputValue == 'Couple 20') {
-    couponBoxBtn.removeAttribute('disabled');
-    grandTotalPrice = grandTotal(totalPrice, 0.2);
-    setTextElementValueById('grand-total-price', grandTotalPrice);
-  }
-});
 
 function getTextElementValueById(elementId) {
   const element = document.getElementById(elementId);
@@ -78,3 +62,38 @@ function grandTotal(total, percent) {
   grandTotal = total - total * percent;
   return grandTotal;
 }
+function setGrandTotal() {
+  if (inputValue == 'NEW15') {
+    grandTotalPrice = grandTotal(totalPrice, 0.15);
+    setTextElementValueById('grand-total-price', grandTotalPrice);
+  } else if (inputValue == 'Couple 20') {
+    grandTotalPrice = grandTotal(totalPrice, 0.2);
+    setTextElementValueById('grand-total-price', grandTotalPrice);
+  }
+}
+
+document
+  .getElementById('coupon-box')
+  .addEventListener('keyup', function (event) {
+    let grandTotalPrice = getTextElementValueById('grand-total-price');
+    let couponBoxBtn = document.getElementById('coupon-box-btn');
+    inputValue = event.target.value;
+    if (inputValue == 'NEW15') {
+      couponBoxBtn.removeAttribute('disabled');
+    } else if (inputValue == 'Couple 20') {
+      couponBoxBtn.removeAttribute('disabled');
+    } else {
+      couponBoxBtn.setAttribute('disabled', true);
+    }
+  });
+//*-------------------------------------------------
+
+document
+  .getElementById('passenger-phone')
+  .addEventListener('keyup', function (event3) {
+    pPhone = event3.target.value;
+    const nextBtn = document.getElementById('next-btn');
+    if (typeof pPhone == 'number') {
+      nextBtn.removeAttribute('disabled');
+    }
+  });

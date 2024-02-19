@@ -549,7 +549,7 @@
                                                         <input disabled id="coupon-box" placeholder="Have any coupon?"
                                                                type="text"
                                                                class="h-14 w-[369px] bg-white rounded-xl font-inter pl-3">
-                                                        <button disabled id="coupon-box-btn" onclick="grandTotal()"
+                                                        <button disabled id="coupon-box-btn" onclick="setGrandTotal()"
                                                                class="bg-[#1DD100] font-inter text-base font-semibold text-white rounded-lg px-[17px] py-[11px] -mt-[52px] mr-2">Apply</button>
                                                  </div>
                                                  <div class="flex justify-between mt-6">
@@ -567,12 +567,12 @@
 
                                           </div>
                                           <div>
-                                                 <h4
+                                                 <h4 id="passenger-name"
                                                         class="text-[#030712] font-inter text-base font-semibold mt-6 mb-4">
                                                         Passenger Name*</h4>
                                                  <input placeholder="Enter your name" type="text"
                                                         class="h-16 w-[433px] rounded-xl border-[1px] border-[#0307121A] font-inter pl-3">
-                                                 <h4
+                                                 <h4 id="passenger-phone"
                                                         class="text-[#030712] font-inter text-base font-semibold mt-6 mb-4">
                                                         Phone Number*</h4>
                                                  <input placeholder="Enter your phone number" type="text"
@@ -582,9 +582,9 @@
                                                         Email ID</h4>
                                                  <input placeholder="Enter your email id" type="text"
                                                         class="h-16 w-[433px] rounded-xl border-[1px] border-[#0307121A] font-inter pl-3">
-                                                 <button onclick="confirm()"
+                                                 <button onclick="confirm()" id="next-btn"
                                                         class="font-raleway text-xl font-extrabold bg-[#1DD100] rounded-2xl px-[30px] py-[21px] w-[433px] mt-6 text-white"
-                                                        disabled>Next</button>
+                                                        >Next</button>
                                                  <div class="flex justify-around mt-6">
                                                         <h4
                                                                class="font-inter text-base font-normal text-[#03071299] underline">

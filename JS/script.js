@@ -41,11 +41,10 @@ for (const seat of seats) {
       'selected-seat-class',
       'selected-seat-price'
     );
+    couponBox = document.getElementById('coupon-box');
     if (seatsClicked === 4) {
-      couponBox = document.getElementById('coupon-box');
       couponBox.removeAttribute('disabled');
         seat.setAttribute('disabled', 'true');
-    
     } else {
       couponBox.setAttribute('disabled', true);
     }
