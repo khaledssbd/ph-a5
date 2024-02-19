@@ -132,7 +132,7 @@ for (const seat of seats) {
         document
           .getElementById('passenger-phone')
           .addEventListener('keyup', function (event) {
-            pPhone = event.target.value.trim();
+            pPhone = event.target.value;
             const nextBtn = document.getElementById('next-btn');
             if (pPhone !== '' && totalPrice >= 550) {
               nextBtn.removeAttribute('disabled');
