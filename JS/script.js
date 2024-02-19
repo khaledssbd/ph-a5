@@ -155,7 +155,7 @@ for (const seat of seats) {
           seat.setAttribute('disabled', 'true');
         }
       } else if (seatsClicked > 4) {
-        alert('Earn More Money');
+        alert('Maximum 4 seats can be booked..!');
         couponBox.setAttribute('disabled', true);
         return;
       }
